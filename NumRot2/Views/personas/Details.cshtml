@@ -1,0 +1,93 @@
+﻿@model NumRot2.Models.personas
+
+@{
+    ViewBag.Title = "Detalles del Registro";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Detalles del Registro</h2>
+        </div>
+        <div class="card-body">
+            <h4 class="text-secondary">Información de Persona</h4>
+            <hr class="mb-4" />
+            <dl class="row">
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.numero_cedula)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.numero_cedula)
+                </dd>
+
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.primer_nombre)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.primer_nombre)
+                </dd>
+
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.segundo_nombre)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.segundo_nombre)
+                </dd>
+
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.primer_apellido)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.primer_apellido)
+                </dd>
+
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.segundo_apellido)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.segundo_apellido)
+                </dd>
+
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.telefono)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.telefono)
+                </dd>
+
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.correo)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.correo)
+                </dd>
+
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.direccion)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.direccion)
+                </dd>
+
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.edad)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.edad)
+                </dd>
+
+                <dt class="col-md-3">
+                    @Html.DisplayNameFor(model => model.genero)
+                </dt>
+                <dd class="col-md-9">
+                    @Html.DisplayFor(model => model.genero)
+                </dd>
+            </dl>
+
+            <div class="form-actions mt-4">
+                <a href="@Url.Action("Edit", "personas", new { id = Model.id })" class="btn btn-primary shadow-sm">Editar</a>
+                <a href="@Url.Action("Index", "personas")" class="btn btn-secondary shadow-sm ml-2">Volver a la lista</a>
+            </div>
+        </div>
+    </div>
+</div>

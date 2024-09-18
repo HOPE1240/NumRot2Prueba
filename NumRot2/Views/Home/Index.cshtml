@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .card {
+            border: 1px solid #ddd;
+            border-radius: .25rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: .75rem;
+        }
+
+        .card-text {
+            margin-bottom: 1.25rem;
+        }
+
+        .jumbotron {
+            background-color: #f8f9fa;
+            padding: 2rem 1rem;
+            border-radius: .3rem;
+        }
+    </style>
+</head>
+<body>
+    <main class="container mt-5">
+        <h1 class="text-center mb-4">Bienvenido a la Aplicación</h1>
+        <div class="row">
+            <!-- Introducción -->
+            <section class="col-md-12 text-center mb-4">
+                <div class="jumbotron jumbotron-fluid bg-light p-4 rounded">
+                    <h2 class="display-4">Gestiona tus datos fácilmente</h2>
+                    <p class="lead">Aquí puedes realizar todas las tareas relacionadas con la gestión de datos de personas, desde agregar nuevos registros hasta editar o eliminar los existentes.</p>
+                </div>
+            </section>
+
+            <!-- Acciones -->
+            <div class="col-md-12">
+                <div class="row">
+                    <!-- Crear Nuevo -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card text-center shadow-sm border-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Crear Nuevo Registro</h5>
+                                <p class="card-text">Añade una nueva persona a la base de datos.</p>
+                                <a href="@Url.Action("Create", "Personas")" class="btn btn-success">Crear Nuevo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ver Registros -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card text-center shadow-sm border-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Ver Registros</h5>
+                                <p class="card-text">Consulta todos los registros de personas en la base de datos.</p>
+                                <a href="@Url.Action("Index", "Personas")" class="btn btn-primary">Ver Registros</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
